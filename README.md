@@ -11,6 +11,7 @@ The desired deliverables are as follows:
 3. A link should be added going from a meeting page back to the meeting index page.
 4. The general design should be updated to a simple and clean aesthetic. Feel free to choose colors, fonts, design choices, etc. We're looking for clean and easy to use, not a magnum opus of design.
 
+The entire project should take no more than 4-6 hours total. Please don't spend more time than that on it.
 
 To send an RSVP, a `POST` request should be sent to `http://localhost:3000/rsvps` with body of:
 ```
