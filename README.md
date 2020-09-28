@@ -64,5 +64,6 @@ The status should be one of `yes`, `no`, `maybe`, or `remote`.
 - `npx knex migrate:up` x 3 ()
 - `npx knex seed:run`
 - `npm run start`
+- Server should be running on localhost:3000
 
 The site is using the Handlebars templating engine currently. Feel free to change if you feel it necessary.
