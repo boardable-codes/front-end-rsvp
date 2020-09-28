@@ -60,9 +60,9 @@ The status should be one of `yes`, `no`, `maybe`, or `remote`.
 
 
 ### To get up and running:
-`npm install`
-`npx knex migrate:up` x 3 ()
-`npx knex seed:run`
-`npm run start`
+- `npm install`
+- `npx knex migrate:up` x 3 ()
+- `npx knex seed:run`
+- `npm run start`
 
 The site is using the Handlebars templating engine currently. Feel free to change if you feel it necessary.
