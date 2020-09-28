@@ -1,0 +1,16 @@
+<h1>{{ meeting.title }}</h1>
+<h4>{{ meeting.description }}</h4>
+<h5>{{ meeting.location }}</h5>
+
+{{#each users}}
+    <div>
+        {{ this.name }} - {{ this.id }}
+    </div>
+{{/each}}
+
+<div style="margin-top: 36px">RSVPs</div>
+{{#each rsvps}}
+    <div>
+        {{ this.name }} ({{ this.title }}) - {{ this.status }}
+    </div>
+{{/each}}
