@@ -5,7 +5,7 @@ var router = express.Router();
 router.get('/', async function(req, res, next) {
   const meetings = await knex('meetings').select('*');
   console.log('meetings: ', meetings)
-  res.render('meetings/index', { meetings });
+  res.json({ meetings });
 });
 
 router.get('/:id', async function(req, res, next) {
@@ -15,7 +15,7 @@ router.get('/:id', async function(req, res, next) {
 
     // console.log('meeting: ', meeting);
     // console.log('rsvps: ', rsvps);
-    res.render('meetings/show', { meeting: meeting[0], users, rsvps })
+  res.json({ meeting: meeting[0], users, rsvps })
 });
 
 module.exports = router;
