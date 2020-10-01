@@ -1,8 +1,54 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: #608CA4 !important;
 }
 
 a {
   color: #00B7FF;
 }
+
+button.btn.btn-secondary.btn-lg.btn-block {
+  background-color: green;
+}
+
+.panel {
+    height: 250rem !important;
+    width: 20rem;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2C5A70 !important;
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+
+ .row.align-items.justify-contentcard-deck {
+  margin: 0 auto;
+  margin-left: 23rem !important;
+  justify-content: space-evenly;
+ }
+
+ .card-text {
+  white-space: nowrap;
+  width: 18rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+ }
+
+ .avatar img{
+  border-radius: 50%;
+  margin: 4rem;
+ }
+
+ .sub-text {
+  color: white;
+  font-weight: 500;
+  font-size: 23px;
+  margin: 3rem;
+ }
+
+ .rsvp-meetings {
+   margin: 3rem;
+ }

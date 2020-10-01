@@ -1,7 +1,40 @@
-<h1>Meetings</h1>
-
-{{#each meetings}}
-    <div>
-        <a href="/meetings/{{this.id}}">{{ this.title }}</a>
+<div class='panel'>
+    <span class="sub-text">Welcome, Boardable!</span>
+    </span>
+    {{!-- Avatar profile --}}
+    <div class="avatar">
+        <img src='https://image.freepik.com/free-vector/profile-icon-male-avatar-hipster-man-wear-headphones_48369-8728.jpg'
+            width="170px">
     </div>
-{{/each}}
+    <span class="sub-text">Upcoming Meetings</span>
+    {{!-- RSVP meetings that were reserved by user --}}
+    <div class="rsvp-meetings">
+        <div class="card border mb-4">
+            <div class="card-header bg-transparent border">Meeting @ 743 Main St.</div>
+            <div class="card-body text">
+                <h5 class="card-title">** RSVP Meeting Details **</h5>
+            </div>
+        </div>
+        <div class="card border mb-4">
+            <div class="card-header bg-transparent border">Meeting @ 830 Main St.</div>
+            <div class="card-body text">
+                <h5 class="card-title">** RSVP Meeting Details **</h5>
+            </div>
+        </div>
+    </div>
+</div>
+{{!-- All the meetings to reserve --}}
+<div class='row align-items justify-contentcard-deck'>
+    {{#each meetings}}
+    <div class="card border mb-4">
+        <div class="card-header bg-transparent border">{{this.title}}</div>
+        <div class="card-body text">
+            <h5 class="card-title">{{this.location}}</h5>
+            <p class="card-text">{{this.description}}</p>
+        </div>
+        <div class="card-footer bg-transparent border"><a href="/meetings/{{this.id}}">View Details</a></div>
+        <div class="card-footer bg-transparent border" style='padding: 0'><button type="button"
+                class="btn btn-secondary btn-lg btn-block">RSVP</button></div>
+    </div>
+    {{/each}}
+</div>
